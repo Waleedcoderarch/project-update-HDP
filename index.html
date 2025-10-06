@@ -1,0 +1,242 @@
+n-description">
+          A comprehensive ML system that predicts heart disease with unprecedented accuracy
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card fade-in" style="--delay: 0s">
+          <div class="feature-icon feature-icon-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="feature-title">100% Accuracy</h3>
+          <p class="feature-text">Gradient Boosting model achieving perfect prediction accuracy on test data</p>
+        </div>
+
+        <div class="feature-card fade-in" style="--delay: 0.1s">
+          <div class="feature-icon feature-icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="feature-title">0.003s Response</h3>
+          <p class="feature-text">Lightning-fast predictions for real-time clinical decision support</p>
+        </div>
+
+        <div class="feature-card fade-in" style="--delay: 0.2s">
+          <div class="feature-icon feature-icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">1025 Records</h3>
+          <p class="feature-text">Trained on comprehensive medical dataset with advanced preprocessing</p>
+        </div>
+      </div>
+
+      <div class="process-card slide-in-left">
+        <h3 class="process-title">Development Process</h3>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Data Collection & Integration</h4>
+              <p class="step-text">Compiled and merged a comprehensive medical dataset of 1025 patient records</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Feature Engineering</h4>
+              <p class="step-text">Applied data cleaning, feature selection, and PCA for optimal performance</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4 class="step-title">Model Training & Optimization</h4>
+              <p class="step-text">Trained multiple models using GridSearchCV and cross-validation techniques</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4 class="step-title">Deployment</h4>
+              <p class="step-text">Built a Flask web application for seamless real-time predictions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content slide-in-left">
+          <span class="section-label">About Me</span>
+          <h2 class="about-name">Waleed Ahmed</h2>
+          <p class="about-text">
+            Hi, I'm Waleed Ahmed, a BCA student at St. Joseph Degree College with a strong passion for coding, AI, and machine learning.
+          </p>
+          <p class="about-text">
+            I enjoy building real-world projects that merge technology and problem-solving, and I'm constantly exploring ways to apply my skills to impactful solutions.
+          </p>
+          <div class="skills">
+            <span class="skill-tag skill-red">Machine Learning</span>
+            <span class="skill-tag skill-blue">Python</span>
+            <span class="skill-tag skill-green">Data Science</span>
+            <span class="skill-tag skill-purple">Web Development</span>
+          </div>
+        </div>
+
+        <div class="about-image slide-in-right">
+          <div class="image-wrapper">
+            <div class="image-bg"></div>
+            <div class="image-content">
+              <div class="profile-placeholder">WA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="predict" class="predict-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Try It Now</span>
+        <h2 class="section-title">Get Your Prediction</h2>
+        <p class="section-description">
+          Enter your medical parameters to receive an instant heart disease risk assessment
+        </p>
+      </div>
+
+      <div class="form-card fade-in">
+        <form class="prediction-form" id="predictionForm">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="age">Age</label>
+              <input type="number" id="age" name="age" placeholder="Enter age" required>
+            </div>
+            <div class="form-field">
+              <label for="sex">Sex (1=Male, 0=Female)</label>
+              <input type="number" id="sex" name="sex" min="0" max="1" placeholder="0 or 1" required>
+            </div>
+            <div class="form-field">
+              <label for="cp">Chest Pain Type (0-3)</label>
+              <input type="number" id="cp" name="cp" min="0" max="3" placeholder="0-3" required>
+            </div>
+            <div class="form-field">
+              <label for="trestbps">Resting Blood Pressure</label>
+              <input type="number" id="trestbps" name="trestbps" placeholder="mm Hg" required>
+            </div>
+            <div class="form-field">
+              <label for="chol">Cholesterol</label>
+              <input type="number" id="chol" name="chol" placeholder="mg/dl" required>
+            </div>
+            <div class="form-field">
+              <label for="fbs">Fasting Blood Sugar > 120 mg/dl</label>
+              <input type="number" id="fbs" name="fbs" min="0" max="1" placeholder="0 or 1" required>
+            </div>
+            <div class="form-field">
+              <label for="restecg">Resting ECG (0-2)</label>
+              <input type="number" id="restecg" name="restecg" min="0" max="2" placeholder="0-2" required>
+            </div>
+            <div class="form-field">
+              <label for="thalach">Max Heart Rate</label>
+              <input type="number" id="thalach" name="thalach" placeholder="bpm" required>
+            </div>
+            <div class="form-field">
+              <label for="exang">Exercise Induced Angina</label>
+              <input type="number" id="exang" name="exang" min="0" max="1" placeholder="0 or 1" required>
+            </div>
+            <div class="form-field">
+              <label for="oldpeak">ST Depression</label>
+              <input type="number" id="oldpeak" name="oldpeak" step="0.1" placeholder="0.0" required>
+            </div>
+            <div class="form-field">
+              <label for="slope">Slope (0-2)</label>
+              <input type="number" id="slope" name="slope" min="0" max="2" placeholder="0-2" required>
+            </div>
+            <div class="form-field">
+              <label for="ca">Major Vessels (0-3)</label>
+              <input type="number" id="ca" name="ca" min="0" max="3" placeholder="0-3" required>
+            </div>
+            <div class="form-field">
+              <label for="thal">Thalassemia (0-3)</label>
+              <input type="number" id="thal" name="thal" min="0" max="3" placeholder="0-3" required>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-submit">Get Prediction</button>
+
+          <div class="result-message" id="resultMessage">
+            <p>Prediction: Low Risk - No signs of heart disease detected</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <span>HeartCare AI</span>
+      </div>
+      <p class="footer-text">Heart Disease Prediction System</p>
+      <p class="footer-credit">Created by Waleed Ahmed</p>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    const menuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.checked = false;
+      });
+    });
+
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach((el) => {
+      observer.observe(el);
+    });
+
+    const form = document.getElementById('predictionForm');
+    const resultMessage = document.getElementById('resultMessage');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      resultMessage.classList.add('show');
+    });
+  </script>
+</body>
+</html>
